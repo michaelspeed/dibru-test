@@ -6,42 +6,7 @@ import * as $ from 'jquery';
 class Home extends React.Component{
 
     componentDidMount(): void {
-        /*$(document).ready(function () {
-            let _tg_latestnewsslider: any = $('#tg-latestnewsslider');
-            _tg_latestnewsslider.owlCarousel({
-                margin: 30,
-                nav: true,
-                loop: true,
-                dots: false,
-                responsiveClass:true,
-                navText: [
-                    '<i class="icon-arrow-left"></i>',
-                    '<i class="icon-arrow-right"></i>',
-                ],
-                navClass: [
-                    'tg-btnsimpleprev tg-btnprev',
-                    'tg-btnsimplenext tg-btnnext'
-                ],
-                responsive : {
-                    0 : {
-                        items:1,
-                        nav:true,
-                    },
-                    480 : {
-                        items:2,
-                        nav:true,
-                    },
-                    768 : {
-                        items:2,
-                        nav:true,
-                    },
-                    992 : {
-                        items:3,
-                        nav:true,
-                    }
-                }
-            });
-        })*/
+
     }
 
     render(): React.ReactElement<any, string | React.JSXElementConstructor<any>> | string | number | {} | React.ReactNodeArray | React.ReactPortal | boolean | null | undefined {
@@ -57,7 +22,7 @@ class Home extends React.Component{
                                         <div className="tg-shortcode tg-welcomeandgreeting tg-welcomeandgreeting-v2">
                                             <div className="tg-shortcodetextbox">
                                                 <h2>WELCOME TO DIBRUGARH UNIVERSITY</h2>
-                                                <div className="tg-description">
+                                                <div className="tg-description" style={{lineHeight: 1.6, textJustify: "inter-word", textAlign: "justify"}}>
                                                     <p>Dibrugarh University, the easternmost University in India, was established in 1965 consequent upon the provisions of the Dibrugarh University Act, 1965, enacted by the Assam Legislative Assembly. It is a leading research and innovation driven University that acts as a spatial slot to configure the socio-cultural dynamics of North East India.The University encourages myriad enterprises that harbour on a constellation of thinking, theorizing, and reflection.</p>
                                                     <p>Dibrugarh University is one of the educational centres of excellence, seeking to amalgamate multi-disciplinary fields with numerous theoretical perspectives, the realm of cultural diversity with the praxis of knowledge, and region-specific issues with a global horizon. The University has a prolific and productive industrial academia interface. With its strong global links in teaching and research programmes, the University offers dynamic educational experiences that prepare the next generation to lead and make a difference and thus contribute to the society at large. The University hosts 177 affiliated colleges and institutes that spread over nine districts of Assam. Dibrugarh University is a member of the Association of Indian Universities and is recognised by all the universities in India and abroad.</p>
                                                     <p>It is situated at Rajabheta, five kilometres to the South of the Dibrugarh town and well connected by road, rails, air and waterways. The University has a vast sprawling campus (550 acres) set in bucolic and idyllic surroundings. Dibrugarh, which is one of the commercial and industrial hubs of North East India, also occupies a unique place in the field of art, literature and culture. It is internationally known as a rich tea producing district, and is also on the global map for its rich reserve of minerals like coal, oil and natural gas. Its diverse flora and fauna make it an exciting region from the environmental and ecological point of view.The various people who inhabit this district present a polychromatic ethnic mosaic and make it a very attractive destination for academia all over the globe.</p>
@@ -72,7 +37,7 @@ class Home extends React.Component{
                                             <figure><img src="assets/images/jadish.jpg" alt="image description" style={{height: 201, width: 167, objectFit:'cover'}}/></figure>
                                             <div className="tg-shortcodetextbox">
                                                 <h2>Welcome &amp; Greetings!</h2>
-                                                <div className="tg-description">
+                                                <div className="tg-description" style={{lineHeight: 1.6, textJustify: "inter-word", textAlign: "justify"}}>
                                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                                                 </div>
                                                 <span className="tg-name">Prof. Jagdish Mukhi</span>
@@ -87,7 +52,7 @@ class Home extends React.Component{
                                             <figure><img src="assets/images/duvc.jpg" alt="image description" style={{height: 201, width: 167, objectFit:'cover'}}/></figure>
                                             <div className="tg-shortcodetextbox">
                                                 <h2>Welcome &amp; Greetings!</h2>
-                                                <div className="tg-description">
+                                                <div className="tg-description" style={{lineHeight: 1.6, textJustify: "inter-word", textAlign: "justify"}}>
                                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                                                 </div>
                                                 <span className="tg-name">Prof. Ranjit Tamuli </span>
@@ -285,189 +250,7 @@ class Home extends React.Component{
                                         <section className="tg-sectionspace tg-haslayout">
                                             <div className="tg-latestnews">
                                                 <div className="tg-borderheading">
-                                                    <h2>Latest News</h2>
-                                                </div>
-                                                <div id="tg-latestnewsslider"
-                                                     className="tg-latestnewsslider owl-carousel tg-posts">
-                                                    <div className="item">
-                                                        <article className="tg-themepost tg-newspost">
-                                                            <figure className="tg-featuredimg">
-                                                                <a href="javascript:void(0);">
-                                                                    <img src="assets/images/themepost/img-05.jpg"
-                                                                         alt="image description"/>
-                                                                </a>
-                                                            </figure>
-                                                            <div className="tg-themepostcontent">
-                                                                <ul className="tg-matadata">
-                                                                    <li>
-                                                                        <a href="javascript:void(0);">
-                                                                            <i className="fa fa-calendar"></i>
-                                                                            <span>Tuesday, Apr 21, 2017</span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                                <div className="tg-themeposttitle">
-                                                                    <h3><a href="javascript:void(0);">Allotment of
-                                                                        Hostel Accommodation 2017!</a></h3>
-                                                                </div>
-                                                                <div className="tg-description">
-                                                                    <p>Consectetur adipisicing elit sed do eiusmod
-                                                                        tempor inunt labore... <a
-                                                                            href="javascript:void(0);">Read More</a></p>
-                                                                </div>
-                                                            </div>
-                                                        </article>
-                                                    </div>
-                                                    <div className="item">
-                                                        <article className="tg-themepost tg-newspost">
-                                                            <figure className="tg-featuredimg">
-                                                                <a href="javascript:void(0);">
-                                                                    <img src="assets/images/themepost/img-06.jpg"
-                                                                         alt="image description"/>
-                                                                </a>
-                                                            </figure>
-                                                            <div className="tg-themepostcontent">
-                                                                <ul className="tg-matadata">
-                                                                    <li>
-                                                                        <a href="javascript:void(0);">
-                                                                            <i className="fa fa-calendar"></i>
-                                                                            <span>Tuesday, Apr 21, 2017</span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                                <div className="tg-themeposttitle">
-                                                                    <h3><a href="javascript:void(0);">Notification of
-                                                                        Mid Term Examinations</a></h3>
-                                                                </div>
-                                                                <div className="tg-description">
-                                                                    <p>Consectetur adipisicing elit sed do eiusmod
-                                                                        tempor inunt labore... <a
-                                                                            href="javascript:void(0);">Read More</a></p>
-                                                                </div>
-                                                            </div>
-                                                        </article>
-                                                    </div>
-                                                    <div className="item">
-                                                        <article className="tg-themepost tg-newspost">
-                                                            <figure className="tg-featuredimg">
-                                                                <a href="javascript:void(0);">
-                                                                    <img src="assets/images/themepost/img-07.jpg"
-                                                                         alt="image description"/>
-                                                                </a>
-                                                            </figure>
-                                                            <div className="tg-themepostcontent">
-                                                                <ul className="tg-matadata">
-                                                                    <li>
-                                                                        <a href="javascript:void(0);">
-                                                                            <i className="fa fa-calendar"></i>
-                                                                            <span>Tuesday, Apr 21, 2017</span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                                <div className="tg-themeposttitle">
-                                                                    <h3><a href="javascript:void(0);">Invites
-                                                                        Application for Admission in Designing
-                                                                        Program</a></h3>
-                                                                </div>
-                                                                <div className="tg-description">
-                                                                    <p>Consectetur adipisicing elit sed do eiusmod
-                                                                        tempor inunt labore... <a
-                                                                            href="javascript:void(0);">Read More</a></p>
-                                                                </div>
-                                                            </div>
-                                                        </article>
-                                                    </div>
-                                                    <div className="item">
-                                                        <article className="tg-themepost tg-newspost">
-                                                            <figure className="tg-featuredimg">
-                                                                <a href="javascript:void(0);">
-                                                                    <img src="assets/images/themepost/img-05.jpg"
-                                                                         alt="image description"/>
-                                                                </a>
-                                                            </figure>
-                                                            <div className="tg-themepostcontent">
-                                                                <ul className="tg-matadata">
-                                                                    <li>
-                                                                        <a href="javascript:void(0);">
-                                                                            <i className="fa fa-calendar"></i>
-                                                                            <span>Tuesday, Apr 21, 2017</span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                                <div className="tg-themeposttitle">
-                                                                    <h3><a href="javascript:void(0);">Allotment of
-                                                                        Hostel Accommodation 2017!</a></h3>
-                                                                </div>
-                                                                <div className="tg-description">
-                                                                    <p>Consectetur adipisicing elit sed do eiusmod
-                                                                        tempor inunt labore... <a
-                                                                            href="javascript:void(0);">Read More</a></p>
-                                                                </div>
-                                                            </div>
-                                                        </article>
-                                                    </div>
-                                                    <div className="item">
-                                                        <article className="tg-themepost tg-newspost">
-                                                            <figure className="tg-featuredimg">
-                                                                <a href="javascript:void(0);">
-                                                                    <img src="assets/images/themepost/img-06.jpg"
-                                                                         alt="image description"/>
-                                                                </a>
-                                                            </figure>
-                                                            <div className="tg-themepostcontent">
-                                                                <ul className="tg-matadata">
-                                                                    <li>
-                                                                        <a href="javascript:void(0);">
-                                                                            <i className="fa fa-calendar"></i>
-                                                                            <span>Tuesday, Apr 21, 2017</span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                                <div className="tg-themeposttitle">
-                                                                    <h3><a href="javascript:void(0);">Notification of
-                                                                        Mid Term Examinations</a></h3>
-                                                                </div>
-                                                                <div className="tg-description">
-                                                                    <p>Consectetur adipisicing elit sed do eiusmod
-                                                                        tempor inunt labore... <a
-                                                                            href="javascript:void(0);">Read More</a></p>
-                                                                </div>
-                                                            </div>
-                                                        </article>
-                                                    </div>
-                                                    <div className="item">
-                                                        <article className="tg-themepost tg-newspost">
-                                                            <figure className="tg-featuredimg">
-                                                                <a href="javascript:void(0);">
-                                                                    <img src="assets/images/themepost/img-07.jpg"
-                                                                         alt="image description"/>
-                                                                </a>
-                                                            </figure>
-                                                            <div className="tg-themepostcontent">
-                                                                <ul className="tg-matadata">
-                                                                    <li>
-                                                                        <a href="javascript:void(0);">
-                                                                            <i className="fa fa-calendar"></i>
-                                                                            <span>Tuesday, Apr 21, 2017</span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                                <div className="tg-themeposttitle">
-                                                                    <h3><a href="javascript:void(0);">Invites
-                                                                        Application for Admission in Designing
-                                                                        Program</a></h3>
-                                                                </div>
-                                                                <div className="tg-description">
-                                                                    <p>Consectetur adipisicing elit sed do eiusmod
-                                                                        tempor inunt labore... <a
-                                                                            href="javascript:void(0);">Read More</a></p>
-                                                                </div>
-                                                            </div>
-                                                        </article>
-                                                    </div>
-                                                </div>
-                                                <div className="tg-btnsbox">
-                                                    <a className="tg-btn" href="javascript:void(0);">view all news</a>
+                                                    <h2>Quick Browse</h2>
                                                 </div>
                                             </div>
                                         </section>
@@ -511,12 +294,12 @@ class Home extends React.Component{
                                         </div>
                                         <div className="tg-widget tg-widgetadmissionform">
                                             <div className="tg-widgetcontent">
-                                                <h3>Admission Form 2017</h3>
-                                                <div className="tg-description">
+                                                <h3>Admission Form 2019</h3>
+                                                <div className="tg-description" style={{lineHeight: 1.6, textJustify: "inter-word", textAlign: "justify"}}>
                                                     <p>Quistane nostrud exertation ulamco laboris nisi ut aliquip ex ea
                                                         comodo consequat aute irure dolor.</p>
                                                 </div>
-                                                <a className="tg-btn tg-btnicon" href="javascript:void(0);">
+                                                <a className="tg-btn tg-btnicon" href="javascript:void(0);" style={{marginTop: 10}}>
                                                     <i className="fa fa-file-pdf-o"></i>
                                                     <span>Download PDF</span>
                                                 </a>
@@ -583,7 +366,7 @@ class Home extends React.Component{
                                                     <li>
                                                         <a href="javascript:void(0);">
                                                             <i className="fa fa-bookmark-o"></i>
-                                                            <span>Examination Guide 2017</span>
+                                                            <span>Examination Guide 2019</span>
                                                         </a>
                                                     </li>
                                                 </ul>
